@@ -1,0 +1,2 @@
+# stockManager
+Proyecto Generacion T
