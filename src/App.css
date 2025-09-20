@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=News+Cycle:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'News Cycle';
+    font-size: large;
+    font-weight: 500;
+}
+
+body{
+    background-color: #CCC8C8;
+    width: 100%;
+}
