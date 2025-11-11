@@ -1,0 +1,123 @@
+/* Estilos generales de la página (fondo y tipografía) */
+.formSection {
+    align-items: start;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Contenedor del formulario */
+.formSection h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding-top: 5vh;
+}
+
+/* Formulario en grid de 2 columnas (izq / der) */
+.registerForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh 5vh;
+    align-items: start;
+    width: 65%;
+    max-width: calc(100% - 40px);
+    padding: 2vh 1vh;
+    box-sizing: border-box;
+    background: transparent;
+    justify-self: center;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+/* Cada campo (label + input) en columna */
+.registerForm>div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de los labels */
+.registerForm label {
+    font-size: 2.2vh;
+    margin-bottom: 1vh;
+    color: #333;
+    text-align: left;
+}
+
+/* Inputs y select: aspecto gris, borde sutil y ligero inset */
+.registerForm input[type="text"],
+.registerForm select {
+    padding: 0.7vh 1vh;
+    border-radius: 0.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: #d0d0d0;
+    outline: none;
+    font-size: 1.7vh;
+    color: #222;
+}
+
+/* Hover / focus para inputs */
+.registerForm input[type="text"]:focus,
+.registerForm select:focus {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 0 3px rgba(0, 0, 0, 0.03);
+}
+
+/* Forzar que el select tenga la misma altura visual */
+.registerForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.4) 50%),
+        linear-gradient(135deg, rgba(0, 0, 0, 0.4) 50%, transparent 50%);
+    background-position: calc(100% - 16px) calc(1em + 2px), calc(100% - 11px) calc(1em + 2px);
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 28px;
+}
+
+/* Botón: estilo tipo pastilla, ubicado a la derecha (columna 2) */
+.createButton {
+    width: 25%;
+    height: 5%;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: #AAA6A6;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    justify-self: center;
+    align-self: end;
+    padding: 1vh;
+}
+
+.createButton:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Ajustes para que los inputs se vean con el largo de la imagen (entradas largas) */
+.registerForm>div input,
+.registerForm>div select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Si quieres que algunos campos comiencen en la columna derecha (por ejemplo Telefono, Correo, Rol),
+     podes añadir manualmente clases en el HTML o usar :nth-child si el orden es fijo. 
+     Ejemplo: poner Teléfono / Correo / Rol en la columna derecha se logra con el HTML actual
+     porque el grid automatiza el orden. */
+
+/* Responsive: en pantallas pequeñas apilar todo vertical */
+@media (max-width: 640px) {
+    .registerForm {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 12px 12px;
+    }
+
+    .createButton {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}

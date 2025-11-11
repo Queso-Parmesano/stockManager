@@ -1,6 +1,28 @@
-.userPanel{
-    width: 95%;
-    height: 90vh;
-    align-self: center;
-    background-color: #D9D9D9;
+.logo{
+    margin-block: 6vh;
+    background-color: aqua;
+    width: 22vh;
+    height: 22vh;
+    border-radius: 1vh;
+    justify-self: center;
+}
+
+.dato h2{
+    width: 17vh;
+}
+
+.dato{
+    display: grid;
+    width: 35vh;
+    padding: 1.5vh;
+    background-color: #E8E8E8;
+    height: 9vh;
+    gap: 1vh;
+    border-radius: 1vh;
+    justify-self: center;
+    margin-block: 4vh;
+}
+
+.logo h1{
+    font-size: 12vh;
 }

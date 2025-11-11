@@ -32,9 +32,9 @@ function Home(){
             </div>
             <form onSubmit={reqLogin}>
                 <label htmlFor="user">Username</label>
-                <input type="text" name="user" id="user" placeholder='Username' value={username} onChange={(e) => {setUsername(e.target.value)}}/>
+                <input required type="text" name="user" id="user" placeholder='Username' value={username} onChange={(e) => {setUsername(e.target.value)}}/>
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" id="password" placeholder='Password' value={password} onChange={(e) => {setpassword(e.target.value)}}/>
+                <input required type="password" name="password" id="password" placeholder='Password' value={password} onChange={(e) => {setpassword(e.target.value)}}/>
                 <button type="submit">Login</button>
             </form>
         </div>

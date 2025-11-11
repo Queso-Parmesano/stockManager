@@ -1,0 +1,73 @@
+.formStockMat{
+    width: 100%;
+    align-content: center;
+    height: -webkit-fill-available;
+}
+
+.formStockMat button{
+    padding: 1vh !important;
+    margin-top: 3vh;
+    width: 20%;
+}
+
+.content h2{
+    font-size: 3vh;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.input{
+    display: flex;
+    margin-block: 2vh;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+}
+
+.input input{
+    padding: 0.7vh 1vh;
+    border-radius: 0.5vh;
+    border: 1px solid rgb(0 0 0 / 37%);
+    background: #e9dcdc;
+    font-size: 2vh;
+}
+
+.input select{
+    padding: 0.7vh 1vh;
+    border-radius: 0.5vh;
+    border: 1px solid rgb(0 0 0 / 37%);
+    background: #e9dcdc;
+    font-size: 2vh;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+
+
+.butDisplay {
+    padding: 3vh 4vh !important;
+    width: 20%;
+    border-radius: 1.5vh !important;
+}
+
+.apply{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.areYouSure{
+    width: 60%;
+}
+
+.buttonsSure{
+    display: flex;
+    justify-content: space-evenly;
+}

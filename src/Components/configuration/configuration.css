@@ -1,0 +1,102 @@
+.infoAccount {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    justify-self: center;
+    gap: 3vh;
+    padding-block: 3%;
+}
+
+.info input {
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+}
+
+.line {
+    width: 95%;
+    background-color: black;
+    height: .5%;
+    margin-block: 3%;
+    justify-self: center;
+    border-radius: 10vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.info p {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.changeColor {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 50%;
+}
+
+.optionsColors {
+    height: 100%;
+}
+
+.optionsColors div p {
+    width: 75%;
+    justify-self: center;
+    font-size: larger;
+}
+
+.optionsColors div {
+    height: 60%;
+    align-content: center;
+}
+
+.optionsColors button {
+    width: 10vw;
+    border: none;
+    height: 35%;
+    border-radius: 2vh;
+    background-color: #c3c0c0;
+    cursor: pointer;
+}
+
+.infoButton {
+    border: none;
+    background-color: #c3c0c0;
+    width: 75%;
+    border-radius: 2vh;
+    height: 73%;
+    align-self: center;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.optionsColors button:hover,
+.infoButton:hover {
+    background-color: #a8a5a5;
+}
+
+.sectionInfoAccount {
+    width: 95%;
+    justify-self: center;
+    background-color: #EBEBEB;
+    border-radius: 2vh;
+}
+
+.sectionChangeColor {
+    width: 95%;
+    height: 38%;
+    justify-self: center;
+    background-color: #EBEBEB;
+    border-radius: 2vh;
+}
+
+.sectionChangeColor h2 {
+    padding-top: 2%;
+    height: 35%;
+    font-size: x-large;
+}

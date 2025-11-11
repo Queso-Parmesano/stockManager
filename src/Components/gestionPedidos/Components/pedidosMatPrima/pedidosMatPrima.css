@@ -1,0 +1,50 @@
+.tablaPedMatPrimas {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+}
+
+.tablaPedMatPrimas-wrapper{
+    overflow-y: auto;
+    width: 95%;
+    margin-top: 7%;
+    max-height: 92%;
+    justify-self: center;
+}
+
+.tablaPedMatPrimas th {
+    background-color: #d0d0d0;
+    color: #333;
+    font-weight: bold;
+    padding: 2vh;
+    text-align: center;
+    border: 0.1vh solid #bbb;
+    padding-inline: 4vh;
+    white-space: nowrap;
+}
+
+.tablaPedMatPrimas td {
+    padding: 2vh;
+    border: 0.1vh solid #bbb;
+    background-color: #e8e8e8;
+    text-align: center;
+    height: 5vh;
+    white-space: nowrap;
+}
+
+.tablaPedMatPrimas tr:nth-child(even) td {
+    background-color: #ddd;
+}
+
+.tablaPedMatPrimas tr:nth-child(odd) td {
+    background-color: #e8e8e8;
+}
+
+.tablaPedMatPrimas tr button {
+    padding: 0.2vh 0.7vh;
+    background-color: #9d6a6a;
+    color: white;
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}

@@ -1,39 +1,32 @@
 .menuPanel{
-    width: 40%;
+    width: 35%;
 }
-
 .menuPanel button{
     border: none;
     border-radius: 1.5vh;
     cursor: pointer;
 }
-
 .opcionMenu.active{
     background-color: #7c7a7a;
 }
-
 .menuPanel button:hover{
     background-color: #afacac;
 }
-
 .opcionMenu {
     padding-inline: 12vh;
-    padding-block: 2vh;
+    height: 7vh;
 }
-
 .sectionMenu{
     display: grid;
-    gap: 7vh;
+    gap: 1%;
     justify-content: center;
     margin-top: 7vh;
+    height: 75%;
 }
-
 .sectionLogout{
-    justify-content: center;
-    display: grid;
-    margin-top: 14vh;
+    justify-self: center;
+    margin-top: 5%;
 }
-
 .logOut{
     padding-inline: 10vh;
     padding-block: 1.2vh;
